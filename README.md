@@ -30,12 +30,18 @@ The random baseline parses we use in the study can be found [here](random_parses
 
 To generate the random parses yourself, you need to:
 
-1. request [Penn Treebank Parsed](https://catalog.ldc.upenn.edu/LDC99T42) data.
+1. Request [Penn Treebank Parsed](https://catalog.ldc.upenn.edu/LDC99T42) data.
 
 2. Extract the raw texts and arrange them in the format of [wsj10_sample.txt](wsj10_sample.txt) and [wsjtest_sample.txt](wsjtest_sample.txt). We are only providing samples instead of releasing the complete version of the formatted data because the source data are not publicly available without requesting.
 
 3. Run the following command:
 ```parse_by_baseline.py```
+
+## F1-scores
+
+To compute the F1 between two parses, use the following command:
+
+```EVALB/evalb -p EVALB/COLLINS.prm parse_1 parse_2 >output```
 
 ## References
 
