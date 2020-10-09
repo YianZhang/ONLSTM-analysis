@@ -1,4 +1,4 @@
-# ONLSTM
+# ONLSTM Analysis
 
 This repository contains the ONLSTM checkpoints and their parses analyzed in the paper Latent Tree Learning with Ordered Neurons: What Parses Does It Produce?
 
@@ -19,10 +19,12 @@ To reproduce these checkpoints yourself, you need to:
 3. Use the command: 
 ```python main.py --batch_size 20 --dropout 0.45 --dropouth 0.3 --dropouti 0.5 --wdrop 0.45 --chunk_size 10 --seed 141 --epochs 1000 --save ONLSTM-1.pt```
 
-* If you want to generate a parse using your checkpoint, you will need to request [Penn Treebank Parsed](https://catalog.ldc.upenn.edu/LDC99T42) data, and use the command:
+The random seeds we use are: 141, 494, 1998, 982, and 192.
+
+* If you want to generate a parse using your own checkpoint, you will need to request [Penn Treebank Parsed](https://catalog.ldc.upenn.edu/LDC99T42) data, and use the command:
 ```python test_phrase_grammar.py --cuda```
 
-The random seeds we use are: 141, 494, 1998, 982, and 192.
+
 
 ## Random Baselines
 
@@ -32,10 +34,10 @@ To generate the random parses yourself, you need to:
 
 1. Request [Penn Treebank Parsed](https://catalog.ldc.upenn.edu/LDC99T42) data.
 
-2. Extract the raw texts and arrange them in the format of [wsj10_sample.txt](wsj10_sample.txt) and [wsjtest_sample.txt](wsjtest_sample.txt). We are only providing samples instead of releasing the complete version of the formatted data because the source data are not publicly available without requesting.
+2. Extract the raw texts and arrange them in the format of [wsj10_sample.txt](wsj10_sample.txt) and [wsjtest_sample.txt](wsjtest_sample.txt). We are only providing samples instead of the complete version of the formatted data because the source data are not publicly available without requesting.
 
 3. Run the following command:
-```parse_by_baseline.py```
+```python parse_by_baseline.py```
 
 ## F1-scores
 
