@@ -32,7 +32,7 @@ To generate the random parses yourself, you need to:
 
 1. request [Penn Treebank Parsed](https://catalog.ldc.upenn.edu/LDC99T42) data.
 
-2. Extract the raw texts and arrange them in the format of [wsj10_sample.txt](wsj10_sample.txt) and [wsjtest_sample.txt](wsjtest_sample.txt). We are not releasing the full formatted data because the source data are not publicly available without requesting.
+2. Extract the raw texts and arrange them in the format of [wsj10_sample.txt](wsj10_sample.txt) and [wsjtest_sample.txt](wsjtest_sample.txt). We are only providing samples instead of releasing the complete version of the formatted data because the source data are not publicly available without requesting.
 
 3. Run the following command:
 ```parse_by_baseline.py```
